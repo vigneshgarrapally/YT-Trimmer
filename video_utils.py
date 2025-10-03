@@ -109,8 +109,6 @@ def download_video_segment(
 
     command = [
         "yt-dlp",
-        "--extractor-args",
-        "youtube:player-client=default,-tv_simply",
         "--download-sections",
         download_section,
         "--force-keyframes-at-cuts",  # For more accurate cuts
